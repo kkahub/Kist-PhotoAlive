@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>PHOTO ALIVE</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+	</head>
+	<body class="sub">
+		<div id="wrap">
+			<!-- Header -->
+			<div id="header">
+				<div class="con">
+					<a href="채널2-1.html">
+						<h1><span>0</span> HOME</h1>
+					</a>
+				</div>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con">
+						<div class="voice_wrap"><!-- .recorded 로 녹음 전/후 구분 -->
+							<div class="voice_view">
+								<div class="arrow top"></div> <!-- on클래스 추가로 활성화 -->
+								<div class="arrow bottom on"></div> <!-- on클래스 추가로 활성화 -->
+								<div class="view">
+									<div class="face">
+										 <!-- 
+										 	a 사이즈 너비, 높이 같게 사이즈 지정 ex) width:100px; height:100px; 
+										 	위치 top, left 각자 지정
+										 	선택한 얼굴 on클래스 추가
+										 -->
+										<a href="#"></a>
+										<a href="#" class="on"></a>
+									</div>
+									<div class="person_select">
+										<div class="on"><img src="../images/sample1.jpg" alt="sample1"></div>
+										<div><img src="../images/sample2.jpg" alt="sample1"></div>
+										<div><img src="../images/sample3.jpg" alt="sample1"></div>
+										<div><img src="../images/sample2.jpg" alt="sample1"></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 녹음 전 -->
+							<div class="voice_record">
+								<div class="recipient">
+									<div class="recipient_face">
+										<img src="../images/sample1.jpg" alt="sample1">
+									</div>
+									<div class="recipient_info">
+										<h2 class="name">홍길순</h2>
+										<p class="relation">딸</p>
+									</div>
+								</div>
+								<div class="record">
+									<div class="count"><span></span>00:00</div>
+									<p class="info_off">
+										<em>2번</em>을 누르면<br> 음성녹음이 시작됩니다.
+									</p>
+								</div>
+							</div>
+							<!-- /녹음 전 -->
+							<!-- 녹음 후 -->
+							<div class="voice_send">
+								<div class="recipient">
+									<div class="recipient_face">
+										<img src="../images/sample1.jpg" alt="sample1">
+									</div>
+									<div class="recipient_info">
+										<h2 class="name">홍길순</h2>
+										<p class="relation">딸</p>
+									</div>
+								</div>
+								<div class="record on"><!-- 음성메일 버튼 누르면 on 클래스 추가 -->
+									<div class="count"><span></span>00:00</div>
+									<p class="info_on">
+										녹음중입니다. <em>2번</em>을 누르면<br> 음성녹음이 종료됩니다.
+									</p>
+								</div>
+
+								<div class="record_list">
+									<ul>
+										<li>
+											<div class="period">
+												<p class="date">2017.09.12</p>
+												<p class="time">02:03</p>
+											</div>
+											<div class="state"> <!-- end 클래스 추가 -->
+												<div class="progress">
+													<span class="bar"></span>
+												</div>
+												<img src="../images/icon/icon_send.png" alt="메일 보냄">
+											</div>
+										</li>
+										<li>
+											<div class="period">
+												<p class="date">2017.09.12</p>
+												<p class="time">02:03</p>
+											</div>
+											<div class="state end">
+												<div class="progress">
+													<span class="bar"></span>
+												</div>
+												<img src="../images/icon/icon_send.png" alt="메일 보냄">
+											</div>
+										</li>
+										<li>
+											<div class="period">
+												<p class="date">2017.09.12</p>
+												<p class="time">02:03</p>
+											</div>
+											<div class="state end">
+												<div class="progress">
+													<span class="bar"></span>
+												</div>
+												<img src="../images/icon/icon_send.png" alt="메일 보냄">
+											</div>
+										</li>
+										<li>
+											<div class="period">
+												<p class="date">2017.09.12</p>
+												<p class="time">02:03</p>
+											</div>
+											<div class="state end">
+												<div class="progress">
+													<span class="bar"></span>
+												</div>
+												<img src="../images/icon/icon_send.png" alt="메일 보냄">
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="voice_btn_list">
+									<button class="prev" type="button">이전</button>
+									<button class="next" type="button">다음</button>
+								</div>
+							</div>
+							<!-- /녹음 후 -->
+						</div>
+
+						<div class="comm_btn_wrap">
+							<a href="채널2-2사진선택.html" class="btn_number">
+								<span>1</span> 사진선택
+							</a>
+							<a href="채널2-3음성메일.html" class="btn_number record_start">
+								<span>2</span> 음성/메일
+							</a>
+							<button type="button" class="btn_number">
+								<span>3</span> SNS 공유
+							</button>
+							<a href="채널2-4가족정보태깅.html" class="btn_number">
+								<span>4</span> 가족정보 태깅
+							</a>
+						</div>
+
+						<p class="notice_sys">
+							<em>E-mail</em>로 음성메시지가 전송되었습니다.
+						</p>
+					</div>
+				</div>
+				<!-- //Section 01 -->
+			</div>
+			<!-- //Container -->
+		</div>
+	</body>
+</html>

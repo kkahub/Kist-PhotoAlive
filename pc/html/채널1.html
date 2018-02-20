@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>PHOTO ALIVE</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+	</head>
+	<body class="sub">
+		<div id="wrap">
+			<!-- Header -->
+			<div id="header">
+				<div class="con">
+					<a href="index.html">
+						<h1><span>0</span> HOME</h1>
+					</a>
+				</div>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con">
+						<div class="view_wrap">
+							<div class="arrow left"></div> <!-- on클래스 추가로 활성화 -->
+							<div class="arrow right on"></div> <!-- on클래스 추가로 활성화 -->
+							<ul class="view">
+								<li class="on"><img src="../images/sample1.jpg" alt="sample"></li><!-- on클래스 추가로 슬라이드 띄우기 -->
+								<li><img src="../images/sample2.jpg" alt="sample"></li>
+								<li><img src="../images/sample3.jpg" alt="sample"></li>
+							</ul>
+							<div class="pagenation">
+								<span class="current">1</span>
+								<span class="all">20</span>
+							</div>
+						</div>
+						<div class="view_btn_wrap">
+							<button class="btn_photo_del">
+								<span></span>
+								사진삭제
+							</button>
+							<button class="btn_slide">
+								<span></span>
+								슬라이드
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- //Section 01 -->
+			</div>
+			<!-- //Container -->
+		</div>
+
+		<!-- 레이어 팝업: 사진삭제 -->
+		<div class="pop_wrap">
+			<div class="pop_win photo_del">
+				<p>정말 삭제 하시겠습니까?</p>
+				<button class="btn_yes">예</button>
+				<button class="btn_no">아니오</button>
+			</div>
+		</div>
+		<!-- /레이어 팝업: 사진삭제 -->
+	</body>
+</html>

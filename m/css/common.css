@@ -1,0 +1,355 @@
+@charset "UTF-8";
+
+/* Layout */
+	html, body{
+		height:100%;
+	}
+	#wrap,
+	#header,
+	#container,
+	#footer {
+	    position: relative;
+	    width: 100%; 
+	}
+	.con {
+	    position: relative;
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	#container .section {
+	    position: relative;
+	}
+	#container .con .headline {
+	    height: 60px;
+	    font-size: 24px;
+	    color: #004986;
+	    text-align: center;
+	}
+
+/* Log in */
+	#header .con.main{
+		padding:14% 0 10%;
+	}
+	#header .con.main h1{
+		max-width:194px; width:30%;
+		font-size:34px; color:#7b829f; text-align: center;
+	}
+
+	#container .login_wrap{
+		padding:0 12% 10%;
+	}
+	#container .login_wrap label{
+		display: none;
+	}
+	#container .login_wrap input{
+		width:100%; height:3em; margin-bottom:.4em;
+		box-shadow: 3px 3px 5px 0 rgba(0,0,0,.2) inset;
+	}
+	#container .login_wrap input[type="text"]{
+		border-radius: 0 10px 0 0;
+	}
+	#container .login_wrap input[type="password"]{
+		border-radius: 0 0 0 10px;
+	}
+	#container .btn_login{
+		position: relative;
+		overflow: hidden;
+		width:100%; height:3em; 
+		margin-bottom:.4em; padding-left:4.7em;
+		border-radius: 0 10px;
+		box-shadow: 3px 3px 5px 0 rgba(0,0,0,.2);
+		background: #58689d;
+		font-size:1.1em; color:rgba(218,222,234,1); text-align: left;
+	}
+	#container .btn_login:active{
+		background:#1c2542;
+		color:rgba(218,222,234,.6);
+	}
+	#container .icon_login{
+		position: absolute; top:0; left:0;
+		display: block;
+		width:26%; max-width: 67px; height:100%;
+		border-radius: 0 0 0 10px;
+		background:#6fdc7d url('../images/login/icon_login.png') no-repeat center center/80%;
+	}
+
+	/* 하이라이트 설정 */
+	#container .highlight{
+		position:absolute; top:0; left:0; z-index: 10;
+		width:100%; height:100%;
+		padding:3px;
+	}
+	#container .highlight>span{
+		display: block;
+		width:100%; height:100%;
+	}
+	#container .btn_login .highlight>span{
+		background:url('../images/login/btn_highlight1.png') no-repeat bottom left/25%,url('../images/login/btn_highlight2.png') no-repeat top right/25%;
+	}
+	#container .btn_login:active .highlight>span{
+		background: none;
+	}
+
+	.btn_signin{
+		padding:12%;
+		background: #28304b;
+	}
+	.btn_signin>a{
+		overflow: hidden;
+		position: relative;
+		display: block;
+		width:100%; height:3em; 
+		margin-bottom:.4em; padding-left:4.7em;
+		border-radius: 0 10px;
+		box-shadow: 3px 3px 5px 0 rgba(0,0,0,.2);
+		background: #58689d;
+		font-size:1.1em; color:rgba(218,222,234,1); 
+		line-height: 3em; text-align: left;
+	}
+	.btn_signin>a:active{
+		background:#1c2542;
+		color:rgba(218,222,234,.6);
+	}
+	.btn_signin>a .icon_signin{
+		position: absolute; top:0; left:0;
+		display: block;
+		width:26%; max-width: 67px; height:100%;
+		border-radius: 0 0 0 10px;
+		background:#4aa9aa url('../images/login/icon_signin.png') no-repeat center center/80%;
+	}
+	.btn_signin>a .highlight>span{
+		background:url('../images/login/btn_highlight1.png') no-repeat bottom left/25%,url('../images/login/btn_highlight2.png') no-repeat top right/25%;
+	}
+	.btn_signin>a:active .highlight>span{
+		background: none;
+	}
+
+
+/* 업로드 */
+	#header .con{
+		padding:12% 0 0;
+		text-align: center;
+	}
+	#header .con h1{
+		display: inline-block;
+		max-width:106px; width:18%;
+		font-family:'HeadlineM',"HY헤드라인M","dotum"; font-size:1.2em; color:#7b829f;
+	}
+	#header .con h1 img{
+		width:100%;
+	}
+
+	.img_view{
+		padding:20% 3.5em;
+	}
+	.img_view img{
+		width:100%;
+	}
+	.upload_wrap{
+		padding:0 3.5em 2em;
+	}
+	.upload_wrap button{
+		overflow:hidden; 
+		position: 	relative;
+		width:48%;
+	}
+	.upload_wrap button img{
+		position: relative; top:0; left:0;
+		width: 200%;
+	}
+	.upload_wrap button:active img{
+		left:-100%;
+	}
+	.upload_wrap button:first-child{
+		float:left;
+	}
+	.upload_wrap button:last-child{
+		float:right;
+	}
+
+	.upload_wrap button span{
+		display: inline-block; vertical-align: text-bottom;
+		width:2.3em; height:2.3em;
+	}
+	.upload_wrap .icon_check{
+		background: url('../images/upload/icon_check.png') no-repeat top left/cover;
+	}
+	.upload_wrap .icon_upload{
+		background: url('../images/upload/upload.png') no-repeat top left/cover;
+	}
+
+	.upload_wrap button:active .icon_check{
+		opacity:.7;
+	}
+	.upload_wrap button:active .icon_upload{
+		opacity:.7;
+	}
+
+
+/* 레이어 팝업: 사진올리기 */
+	.pop_wrap{
+		display: none;
+		position: fixed; top:0; left:0;
+		width:100%; height:100%;
+		background:rgba(0,0,0,.8);
+	}
+	.pop_win{
+		position: absolute; top:50%; left:15%;
+		border:3px solid #c3c9dc; border-radius: 10px;
+		background-image: url('../images/bg.jpg');
+		background-repeat: repeat-x;
+		background-position: 0 -150px;
+	}
+
+	.pop_win.photo_upload{
+		width:70%; height:30%;
+		margin:-112px 0 0 0;
+		text-align: center;
+	}
+	.pop_win.photo_upload p{
+		margin:20% 0 11%;
+		font-size: 16px; text-align: center;
+	}
+	.pop_win.photo_upload .btn_conf{
+		cursor: pointer;
+		display: inline-block;
+		min-width:50%; height:30%; margin:0 13px; padding:0 25px;
+		border-radius: 0 10px;
+		border:2px solid #7585c9;
+		background: #7585c9;
+		background:-webkit-repeating-linear-gradient(#a0abda,#7585c9 20%,#7585c9 100%);
+		background:-moz-repeating-linear-gradient(#a0abda,#7585c9 20%,#7585c9 100%);
+		background:-o-repeating-linear-gradient(#a0abda,#7585c9 20%,#7585c9 100%);
+		background:repeating-linear-gradient(#a0abda,#7585c9 20%,#7585c9 100%);
+		font-size: 18px; color:#f3f3f3; line-height: 100%; text-align: center;
+	}
+/*	.view_btn_wrap .btn_conf:active{
+		background: #19203c;
+		color:rgba(218,222,234,.6);
+	}*/
+	.pop_win.photo_upload .btn_conf:active{
+		border:2px solid #58689d;
+		background:#58689d;
+		color:#fff;
+	}
+
+
+/* 리모컨 */
+	.arrow_area{
+		position: relative; top:0;
+		width:100%;	padding:25% 3.5em;
+		text-align: center;
+	}
+	.arrow_area .posting,
+	.arrow_area .album{
+		position: absolute; top:-20%;
+		max-width: 200px; max-height:272px; width:29%;
+		background-size: 100% auto;	background-repeat: no-repeat;
+		text-align: center;
+	}
+	.arrow_area .posting{
+		left:7%;
+	}
+	.arrow_area .album{
+		right:7%;
+	}
+	.arrow_area button{
+		text-indent: -999em;
+	}
+	.arrow_area .posting button,
+	.arrow_area .album button{
+		overflow: hidden;
+		position: absolute;
+		width:55%; height:41%; margin:7%;
+	}
+	.arrow_area .posting img,
+	.arrow_area .album img{
+		width: 100%;
+	}
+	.arrow_area .posting button img,
+	.arrow_area .album button img{
+		position: absolute; top:0; left:0;
+		width: 100%;
+	}
+	.arrow_area .posting button:active img,
+	.arrow_area .album button:active img{
+		top:-100%;
+	}
+	.arrow_area .posting .left{
+		top:0; left:0;
+		background-position: 0 0;
+	}
+	.arrow_area .posting .right{
+		bottom:0; right:0;
+		background-position: -240px 0;
+	}
+	.arrow_area .album .top{
+		top:0; right:0;
+		background-position: -480px 0;
+	}
+	.arrow_area .album .bottom{
+		bottom:0; left:0;
+		background-position: -720px 0;
+	}
+
+	.arrow_area h2{
+		position: absolute; bottom: -30%;
+		width:100%;
+		font-size: 1.4em; color:#fff; font-weight: normal; text-align: center;
+	}
+
+	.ctrl_wrap{
+		overflow: hidden;
+		position: relative;
+		display: table;
+		margin:0 6% 3%; padding-top:.5%;
+	}
+	.ctrl_wrap button{
+		float:left;
+		overflow: hidden;
+		position: relative;
+		width:50%;
+	}
+	.ctrl_wrap button img{
+		position: relative; left:0;
+		width:200%; height:100%;
+	}
+	.ctrl_wrap button:active img{
+		left:-100%;
+	}
+	.ctrl_wrap .bottom.left{
+		clear: both;
+		float:left;
+	}
+	.ctrl_wrap .home{
+		float:none;
+		display: table-cell; vertical-align: middle;
+		position: absolute; top:0; left:0; right:0; bottom: 0;
+		width:27.6%; height:48.2%; margin:auto;
+		border-radius: 100%;
+	}
+
+	.channel{
+		overflow: hidden;
+		position: relative;
+		margin:0 7% 1.5em;
+	}
+	.channel button{
+		overflow: hidden;
+		position: relative;
+		width:50%;
+	}
+	.channel .ch1{
+		float:left;
+	}
+	.channel .ch2{
+		float:right;
+	}
+	.channel button img{
+		position: relative; left:0;
+		width:200%;
+	}	
+	.channel button:active img{
+		left:-100%;
+	}
+
